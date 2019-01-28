@@ -1,0 +1,10 @@
+<?php
+$json = file_get_contents('http://fipeapi.appspot.com/api/1/carros/marcas.json');
+
+
+// Retrieve a value:
+$phpNative = Zend_Json::decode($json );
+
+print_r($phpNative);
+
+?>
